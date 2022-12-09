@@ -30,7 +30,7 @@ const Sidebar = () => {
       }
     }
     getBoards()
-  }, [dispatch])
+  }, [])
 
   useEffect(() => {
     const activeItem = boards.findIndex(e => e.id === boardId)
