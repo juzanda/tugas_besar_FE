@@ -37,7 +37,7 @@ const Profile = () => {
     e.preventDefault()
     setPasswordErrText('')
 
-    const data = new FormData(e.target)
+   // const data = new FormData(e.target)
     const username1 = username
     const password1 = password
 
@@ -53,7 +53,7 @@ const Profile = () => {
     setLoading(true)
 
     try {
-      const res = await authApi.updatePassword({ username1, password1 })
+      await authApi.updatePassword({ username1, password1 })
       setLoading(false)
       //localStorage.setItem('token', res.token)
       navigate('/')

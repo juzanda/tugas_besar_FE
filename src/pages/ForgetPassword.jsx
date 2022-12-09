@@ -29,7 +29,7 @@ const ForgetPassword = () => {
     setLoading(true)
 
     try {
-      const res = await authApi.forgetPassword({
+      await authApi.forgetPassword({
         username
       })
       console.log("haiiii")
